@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Mini Banking</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bankist App</title>
   </head>
   <body>
     <!-- TOP NAVIGATION -->
@@ -19,12 +19,12 @@
       <form class="login">
         <input
           type="text"
-          placeholder="user"
+          placeholder="User"
           class="login__input login__input--user"
         />
         <!-- In practice, use type="password" -->
         <input
-          type="text"
+          type="password"
           placeholder="PIN"
           maxlength="4"
           class="login__input login__input--pin"
@@ -37,44 +37,40 @@
       <!-- BALANCE -->
       <div class="balance">
         <div>
-          <p class="balance__label">Current balance</p>
-          <p class="balance__date">
-            As of <span class="date">11/06/2025</span>
-          </p>
+          <p class="balance__label">Current Balance</p>
+          <p class="balance__date">As of <span class="date"></span></p>
         </div>
-        <p class="balance__value">0000€</p>
+        <p class="balance__value"></p>
       </div>
 
       <!-- MOVEMENTS -->
       <div class="movements">
         <div class="movements__row">
-          <div class="movements__type movements__type--deposit">2 deposit</div>
-          <div class="movements__date">3 days ago</div>
-          <div class="movements__value">4 000€</div>
+          <div class="movements__type movements__type--deposit"></div>
+          <div class="movements__date"></div>
+          <div class="movements__value"></div>
         </div>
         <div class="movements__row">
-          <div class="movements__type movements__type--withdrawal">
-            1 withdrawal
-          </div>
-          <div class="movements__date">11/06/2025</div>
-          <div class="movements__value">-378€</div>
+          <div class="movements__type movements__type--withdrawal"></div>
+          <div class="movements__date"></div>
+          <div class="movements__value"></div>
         </div>
       </div>
 
       <!-- SUMMARY -->
       <div class="summary">
         <p class="summary__label">In</p>
-        <p class="summary__value summary__value--in">0000€</p>
+        <p class="summary__value summary__value--in"></p>
         <p class="summary__label">Out</p>
-        <p class="summary__value summary__value--out">0000€</p>
+        <p class="summary__value summary__value--out"></p>
         <p class="summary__label">Interest</p>
-        <p class="summary__value summary__value--interest">0000€</p>
+        <p class="summary__value summary__value--interest"></p>
         <button class="btn--sort">&downarrow; SORT</button>
       </div>
 
       <!-- OPERATION: TRANSFERS -->
       <div class="operation operation--transfer">
-        <h2>Transfer money</h2>
+        <h2>Transfer Money</h2>
         <form class="form form--transfer">
           <input type="text" class="form__input form__input--to" />
           <input type="number" class="form__input form__input--amount" />
@@ -86,7 +82,7 @@
 
       <!-- OPERATION: LOAN -->
       <div class="operation operation--loan">
-        <h2>Request loan</h2>
+        <h2>Request Loan</h2>
         <form class="form form--loan">
           <input type="number" class="form__input form__input--loan-amount" />
           <button class="form__btn form__btn--loan">&rarr;</button>
@@ -96,7 +92,7 @@
 
       <!-- OPERATION: CLOSE -->
       <div class="operation operation--close">
-        <h2>Close account</h2>
+        <h2>Close Account</h2>
         <form class="form form--close">
           <input type="text" class="form__input form__input--user" />
           <input
@@ -112,10 +108,10 @@
 
       <!-- LOGOUT TIMER -->
       <p class="logout-timer">
-        You will be logged out in <span class="timer">05:00</span>
+        You will be logged out in <span class="timer"></span>
       </p>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
