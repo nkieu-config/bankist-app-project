@@ -12,6 +12,12 @@ A sleek and responsive **banking interface** built entirely with **vanilla JavaS
 
 ---
 
+## 📸 Screenshots
+
+<img src="public/screenshot.png" alt="Bankist App Screenshot" width="100%">
+
+---
+
 ## ✨ Features
 
 - 🔐 **User Authentication**
